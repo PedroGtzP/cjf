@@ -146,6 +146,13 @@ view: servidoresp_copy {
     type: string
     sql: ${TABLE}.Veh__culo_escolta ;;
   }
+
+
+  dimension: geo_location {
+    type: location
+    sql_latitude:${TABLE}.Lat_ ;;
+    sql_longitude:${TABLE}.Long;;
+  }
   measure: count {
     type: count
   }
