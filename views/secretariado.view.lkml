@@ -136,6 +136,10 @@ view: secretariado {
     type: sum
     sql: ${TABLE}.Septiembre ;;
   }
+  measure: abril_sum {
+    type: sum
+    sql: ${TABLE}.Abril ;;
+  }
 
   measure: count {
     type: count
