@@ -86,6 +86,57 @@ view: secretariado {
     type: number
     sql: ${TABLE}.TotalAnual ;;
   }
+
+  ###################
+  measure: total_anual_sum {
+    type: sum
+    sql: ${TABLE}.TotalAnual ;;
+  }
+  measure: agosto_sum {
+    type: sum
+    sql: ${TABLE}.Agosto ;;
+  }
+
+  measure: enero_sum {
+    type: sum
+    sql: ${TABLE}.Enero ;;
+  }
+
+  measure: febrero_sum {
+    type: sum
+    sql: ${TABLE}.Febrero_ ;;
+  }
+
+  measure: julio_sum {
+    type: sum
+    sql: ${TABLE}.Julio ;;
+  }
+
+  measure: junio_sum {
+    type: sum
+    sql: ${TABLE}.Junio ;;
+  }
+
+  measure: marzo_sum {
+    type: sum
+    sql: ${TABLE}.Marzo ;;
+  }
+
+  measure: mayo_sum {
+    type: sum
+    sql: ${TABLE}.Mayo ;;
+  }
+
+  measure: octubre_sum {
+    type: sum
+    sql: ${TABLE}.Octubre ;;
+  }
+
+  measure: septiembre_sum {
+    type: sum
+    sql: ${TABLE}.Septiembre ;;
+  }
+
   measure: count {
     type: count
   }
