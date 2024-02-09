@@ -35,9 +35,6 @@ explore: secretariado {}
 
 
 
-explore: indicadores_secretariado_copy {}
-
-explore: servidoresp_copy {}
 
 explore: servidoresv3 {
   join: secretariado {
