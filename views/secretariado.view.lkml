@@ -141,6 +141,12 @@ view: secretariado {
     sql: ${TABLE}.Abril ;;
   }
 
+  dimension: geo_location {
+    type: location
+    sql_latitude:${TABLE}.Lat_ ;;
+    sql_longitude:${TABLE}.Long;;
+  }
+
   measure: count {
     type: count
   }
