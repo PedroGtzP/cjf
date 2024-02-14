@@ -59,4 +59,13 @@ view: tweets {
   measure: count {
     type: count
   }
+
+  dimension: geo_location_twitter {
+    type: location
+    sql_latitude:${TABLE}.Latitud ;;
+    sql_longitude:${TABLE}.Longitud;;
+  }
+
+
+
 }
