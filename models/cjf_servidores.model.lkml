@@ -33,7 +33,7 @@ persist_with: cjf_servidores_default_datagroup
 
 explore: secretariado {}
 
-
+explore: tweets {}
 
 
 explore: servidoresv3 {
@@ -43,5 +43,14 @@ explore: servidoresv3 {
     relationship: one_to_one
     type:inner
   }
+
+  join: tweets {
+    #from: eventos_911_data_us
+    sql_on: ${tweets.estado} = ${servidoresv3.entidad_federativa} ;;
+    relationship: one_to_one
+    type:inner
+  }
+
+
 
 }
